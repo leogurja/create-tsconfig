@@ -1,7 +1,8 @@
 # @gurgelio/create-tsconfig
 
 Utility to create tsconfig.json files.
-It contains sane defaults and asks some questions to better fit your use case
+
+It contains sane defaults and asks some questions to better fit your use case.
 
 ## Usage
 
