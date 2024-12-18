@@ -1,39 +1,47 @@
 {
   "name": "@gurgelio/create-tsconfig",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Create a tsconfig.json based on a few questions",
-  "type": "module",
-  "bin": {
-    "create-tsconfig": "dist/index.js"
-  },
-  "scripts": {
-    "build": "tsc",
-    "prepack": "tsc"
+  "keywords": [
+    "tsconfig",
+    "typescript"
+  ],
+  "homepage": "https://github.com/gurgelio/create-tsconfig#readme",
+  "bugs": {
+    "url": "https://github.com/gurgelio/create-tsconfig/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gurgelio/create-tsconfig.git"
   },
+  "license": "MIT",
+  "author": "Leonardo Gurgel",
+  "type": "module",
+  "bin": {
+    "create-tsconfig": "./dist/index.js"
+  },
   "files": [
     "dist"
   ],
-  "engines": {
-    "node": "^18.0.0 || ^20.0.0 || >=22.0.0"
-  },
-  "keywords": [
-    "tsconfig",
-    "typescript"
-  ],
-  "author": "Leonardo Gurgel",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gurgelio/create-tsconfig/issues"
-  },
-  "homepage": "https://github.com/gurgelio/create-tsconfig#readme",
-  "devDependencies": {
-    "typescript": "^5.7.2"
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier .",
+    "lint": "eslint .",
+    "prepack": "tsc"
   },
   "dependencies": {
     "@inquirer/prompts": "^7.2.0"
+  },
+  "devDependencies": {
+    "@gurgelio/eslint-config": "^1.0.0",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-packagejson": "^2.5.6",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": "^18.0.0 || ^20.0.0 || >=22.0.0"
   }
 }
