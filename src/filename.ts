@@ -7,7 +7,7 @@ const cwd = process.cwd();
 export async function chooseFilename() {
   const filename = await input({
     message: "Choose a filename for the config",
-    default: "./tsconfig.json",
+    default: "tsconfig.json",
   });
 
   const fullFilename = join(cwd, filename);
