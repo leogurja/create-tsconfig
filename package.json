@@ -1,0 +1,39 @@
+{
+  "name": "@gurgelio/create-tsconfig",
+  "version": "1.0.0",
+  "description": "Create a tsconfig.json based on a few questions",
+  "type": "module",
+  "bin": {
+    "create-tsconfig": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepack": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurgelio/create-tsconfig.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": "^18.0.0 || ^20.0.0 || >=22.0.0"
+  },
+  "keywords": [
+    "tsconfig",
+    "typescript"
+  ],
+  "author": "Leonardo Gurgel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gurgelio/create-tsconfig/issues"
+  },
+  "homepage": "https://github.com/gurgelio/create-tsconfig#readme",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.0"
+  }
+}
