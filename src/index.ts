@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { writeFile } from "node:fs/promises";
 import { baseOptions } from "./base.js";
 import { chooseBundler, isBundlerImplied } from "./bundler.js";
