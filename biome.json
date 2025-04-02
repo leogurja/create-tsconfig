@@ -1,0 +1,145 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"assist": {
+		"actions": {
+			"recommended": true,
+			"source": {
+				"useSortedAttributes": "on",
+				"useSortedKeys": "on",
+				"useSortedProperties": "on"
+			}
+		},
+		"enabled": true
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double"
+		},
+		"parser": {
+			"jsxEverywhere": false
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"complexity": {
+				"noForEach": "on",
+				"noUselessStringConcat": "on",
+				"noUselessUndefinedInitialization": "on",
+				"noVoid": "on",
+				"useDateNow": "on",
+				"useSimplifiedLogicExpression": "on",
+				"useWhile": "on"
+			},
+			"correctness": {
+				"noConstantMathMinMaxClamp": "on",
+				"noUndeclaredDependencies": "on",
+				"noUndeclaredVariables": "on",
+				"noUnusedFunctionParameters": "on",
+				"noUnusedImports": "on",
+				"noUnusedPrivateClassMembers": "on",
+				"noUnusedVariables": "on",
+				"useArrayLiterals": "on",
+				"useHookAtTopLevel": "on"
+			},
+			"nursery": {
+				"noAwaitInLoop": "on",
+				"noBitwiseOperators": "on",
+				"noConstantBinaryExpression": "on",
+				"noDescendingSpecificity": "on",
+				"noDocumentCookie": "on",
+				"noDuplicateCustomProperties": "on",
+				"noDuplicateElseIf": "on",
+				"noDuplicateFields": "on",
+				"noDuplicateProperties": "on",
+				"noDynamicNamespaceImportAccess": "on",
+				"noEnum": "on",
+				"noExportedImports": "on",
+				"noFloatingPromises": "on",
+				"noGlobalDirnameFilename": "on",
+				"noImportCycles": "on",
+				"noIrregularWhitespace": "on",
+				"noMissingVarFunction": "on",
+				"noNestedTernary": "on",
+				"noNoninteractiveElementInteractions": "on",
+				"noOctalEscape": "on",
+				"noProcessGlobal": "on",
+				"noSecrets": "on",
+				"noStaticElementInteractions": "on",
+				"noSubstr": "on",
+				"noTsIgnore": "on",
+				"noUnknownAtRule": "on",
+				"noUnknownPseudoClass": "on",
+				"noUnknownPseudoElement": "on",
+				"noUnknownTypeSelector": "on",
+				"noUselessEscapeInRegex": "on",
+				"noUselessEscapeInString": "on",
+				"noUselessStringRaw": "on",
+				"noUselessUndefined": "on",
+				"noValueAtRule": "on",
+				"useAdjacentOverloadSignatures": "on",
+				"useAriaPropsSupportedByRole": "on",
+				"useAtIndex": "on",
+				"useCollapsedIf": "on",
+				"useComponentExportOnlyModules": "on",
+				"useConsistentCurlyBraces": "on",
+				"useConsistentMemberAccessibility": "on",
+				"useConsistentObjectDefinition": {
+					"level": "on",
+					"options": {
+						"syntax": "shorthand"
+					}
+				},
+				"useDeprecatedReason": "on",
+				"useExportsLast": "on",
+				"useGuardForIn": "on",
+				"useNamedOperation": "on",
+				"useSortedClasses": "on",
+				"useStrictMode": "on",
+				"useSymbolDescription": "on",
+				"useTrimStartEnd": "on",
+				"useValidAutocomplete": "on"
+			},
+			"performance": {
+				"noBarrelFile": "on",
+				"noDelete": "on",
+				"noReExportAll": "on",
+				"useTopLevelRegex": "on"
+			},
+			"recommended": true,
+			"style": {
+				"noNamespace": "on",
+				"noNamespaceImport": "on",
+				"noNegationElse": "on",
+				"noParameterProperties": "on",
+				"noShoutyConstants": "on",
+				"noYodaExpression": "on",
+				"useCollapsedElseIf": "on",
+				"useConsistentArrayType": "on",
+				"useConsistentBuiltinInstantiation": "on",
+				"useDefaultSwitchClause": "on",
+				"useExplicitLengthCheck": "on",
+				"useForOf": "on",
+				"useFragmentSyntax": "on",
+				"useNodeAssertStrict": "on",
+				"useShorthandAssign": "on",
+				"useThrowNewError": "on",
+				"useThrowOnlyError": "on"
+			},
+			"suspicious": {
+				"noConsole": "on",
+				"noEmptyBlockStatements": "on",
+				"noEvolvingTypes": "on",
+				"useAwait": "on",
+				"useErrorMessage": "on",
+				"useNumberToFixedDigitsArgument": "on"
+			}
+		}
+	},
+	"vcs": {
+		"clientKind": "git",
+		"defaultBranch": "main",
+		"enabled": true,
+		"useIgnoreFile": true
+	}
+}
