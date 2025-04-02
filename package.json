@@ -1,18 +1,18 @@
 {
-  "name": "@gurgelio/create-tsconfig",
+  "name": "@gurja/create-tsconfig",
   "version": "0.2.0",
   "description": "Create a tsconfig.json based on a few questions",
   "keywords": [
     "tsconfig",
     "typescript"
   ],
-  "homepage": "https://github.com/gurgelio/create-tsconfig#readme",
+  "homepage": "https://github.com/leogurja/create-tsconfig#readme",
   "bugs": {
-    "url": "https://github.com/gurgelio/create-tsconfig/issues"
+    "url": "https://github.com/leogurja/create-tsconfig/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gurgelio/create-tsconfig.git"
+    "url": "git+https://github.com/leogurja/create-tsconfig.git"
   },
   "license": "MIT",
   "author": "Leonardo Gurgel",
@@ -25,15 +25,16 @@
   ],
   "scripts": {
     "build": "tsc",
-    "format": "prettier .",
+    "format": "prettier -w .",
     "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "prepack": "tsc"
   },
   "dependencies": {
     "@inquirer/prompts": "^7.2.0"
   },
   "devDependencies": {
-    "@gurgelio/eslint-config": "^1.0.0",
+    "@gurja/eslint-config": "^1.0.0",
     "@types/node": "^22.10.2",
     "eslint": "^9.17.0",
     "prettier": "^3.4.2",

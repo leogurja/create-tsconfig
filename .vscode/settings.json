@@ -1,0 +1,7 @@
+{
+  "[typescriptreact][typescript][javascript][json][jsonc][css][tailwindcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "biome.enabled": false
+}

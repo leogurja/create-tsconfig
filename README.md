@@ -1,4 +1,4 @@
-# @gurgelio/create-tsconfig
+# @gurja/create-tsconfig
 
 Utility to create tsconfig.json files.
 
@@ -11,9 +11,9 @@ Prerequisites: [Node.js](https://nodejs.org)(`^18.0.0`, `^20.0.0` or `>=22.0.0`)
 You can use npm/npx(shipped with Node.js).
 
 ```bash
-npm init @gurgelio/tsconfig@latest
+npm init @gurja/tsconfig@latest
 ```
 
 ```bash
-npx @gurgelio/create-tsconfig@latest
+npx @gurja/create-tsconfig@latest
 ```
