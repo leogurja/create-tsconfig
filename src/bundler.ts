@@ -1,24 +1,22 @@
 import { select } from "@inquirer/prompts";
 import { domOptions } from "./dom.js";
-import {
-	type CompilerOptions,
-	JsxEmit,
-	ModuleKind,
+import type {
+	CompilerOptions,
 } from "./types/compilerOptions.js";
 
 export const tscOptions: CompilerOptions = {
-	module: ModuleKind.ESNext, // moduleResolution: "NodeNext" is implied
+	module: 'esnext', // moduleResolution: "NodeNext" is implied
 	outDir: "dist",
 };
 
 export const bundlerOptions: CompilerOptions = {
-	module: ModuleKind.Preserve, // moduleResolution: "bundler" is implied
+	module: 'preserve', // moduleResolution: "bundler" is implied
 	noEmit: true,
 };
 
 export const bunOptions: CompilerOptions = {
 	...bundlerOptions,
-	jsx: JsxEmit.ReactJSX,
+	jsx: 'react-jsx',
 	types: ["bun-types"],
 };
 

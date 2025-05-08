@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 import { writeFile } from "node:fs/promises";
 import { baseOptions } from "./base.js";
@@ -16,7 +15,7 @@ async function main() {
 
 	const json = JSON.stringify(tsconfig, null, 2);
 
-	await writeFile(filename, json, { flag: "w" });
+	if (filename) await writeFile(filename, json, { flag: "w" });
 }
 
 async function buildTsconfig() {

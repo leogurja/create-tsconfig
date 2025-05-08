@@ -1,19 +1,19 @@
 import { select } from "@inquirer/prompts";
 import { bundlerOptions } from "./bundler.js";
 import { domOptions, noDomOptions } from "./dom.js";
-import { type CompilerOptions, JsxEmit } from "./types/compilerOptions.js";
+import type { CompilerOptions } from "./types/compilerOptions.js";
 
 export const reactOptions: CompilerOptions = {
 	...bundlerOptions,
 	...domOptions,
-	jsx: JsxEmit.ReactJSX,
+	jsx: 'react-jsx',
 };
 
 export const reactNativeOprions: CompilerOptions = {
 	...bundlerOptions,
 	...noDomOptions,
 	types: ["react-native"],
-	jsx: JsxEmit.ReactNative,
+	jsx: 'react-native',
 };
 
 export const svelteOptions: CompilerOptions = {
@@ -25,7 +25,7 @@ export const nextOptions: CompilerOptions = {
 	...bundlerOptions,
 	...domOptions,
 	incremental: true,
-	jsx: JsxEmit.Preserve,
+	jsx: 'preserve',
 	plugins: [
 		{
 			name: "next",
