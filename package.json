@@ -1,48 +1,48 @@
 {
-	"author": "Leonardo Gurgel",
-	"bin": {
-		"create-tsconfig": "dist/index.js"
-	},
-	"bugs": {
-		"url": "https://github.com/leogurja/create-tsconfig/issues"
-	},
-	"dependencies": {
-		"@inquirer/prompts": "^7.2.0"
-	},
-	"description": "Create a tsconfig.json based on a few questions",
-	"devDependencies": {
-		"@gurja/eslint-config": "^3.0.2",
-		"@types/node": "^22.10.2",
-		"eslint": "^9.26.0",
-		"prettier": "^3.5.3",
-		"prettier-plugin-organize-imports": "^4.1.0",
-		"prettier-plugin-packagejson": "^2.5.11",
-		"prettier-plugin-tailwindcss": "^0.6.11",
-		"typescript": "^5.7.2"
-	},
-	"engines": {
-		"node": "^18.0.0 || ^20.0.0 || >=22.0.0"
-	},
-	"files": [
-		"dist"
-	],
-	"homepage": "https://github.com/leogurja/create-tsconfig#readme",
-	"keywords": [
-		"tsconfig",
-		"typescript"
-	],
-	"license": "MIT",
-	"name": "@gurja/create-tsconfig",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/leogurja/create-tsconfig.git"
-	},
-	"scripts": {
-		"build": "tsc",
-		"format": "prettier --write .",
-		"lint": "eslint .",
-		"prepack": "tsc"
-	},
-	"type": "module",
-	"version": "0.2.0"
+  "name": "@gurja/create-tsconfig",
+  "version": "0.2.0",
+  "description": "Create a tsconfig.json based on a few questions",
+  "keywords": [
+    "tsconfig",
+    "typescript"
+  ],
+  "homepage": "https://github.com/leogurja/create-tsconfig#readme",
+  "bugs": {
+    "url": "https://github.com/leogurja/create-tsconfig/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leogurja/create-tsconfig.git"
+  },
+  "license": "MIT",
+  "author": "Leonardo Gurgel",
+  "type": "module",
+  "bin": {
+    "create-tsconfig": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "prepack": "tsc"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.0"
+  },
+  "devDependencies": {
+    "@gurja/eslint-config": "^3.0.2",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.26.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-packagejson": "^2.5.11",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": "^18.0.0 || ^20.0.0 || >=22.0.0"
+  }
 }

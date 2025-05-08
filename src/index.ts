@@ -1,4 +1,3 @@
-
 import { writeFile } from "node:fs/promises";
 import { baseOptions } from "./base.js";
 import { chooseBundler, isBundlerImplied } from "./bundler.js";
@@ -10,31 +9,31 @@ import { chooseLibrary } from "./library.js";
 main().catch(console.error);
 
 async function main() {
-	const tsconfig = await buildTsconfig();
-	const filename = await chooseFilename();
+  const tsconfig = await buildTsconfig();
+  const filename = await chooseFilename();
 
-	const json = JSON.stringify(tsconfig, null, 2);
+  const json = JSON.stringify(tsconfig, null, 2);
 
-	if (filename) await writeFile(filename, json, { flag: "w" });
+  if (filename) await writeFile(filename, json, { flag: "w" });
 }
 
 async function buildTsconfig() {
-	let compilerOptions = baseOptions;
+  let compilerOptions = baseOptions;
 
-	compilerOptions = { ...compilerOptions, ...(await chooseFramework()) };
+  compilerOptions = { ...compilerOptions, ...(await chooseFramework()) };
 
-	if (!isBundlerImplied(compilerOptions)) {
-		compilerOptions = { ...compilerOptions, ...(await chooseBundler()) };
-	}
+  if (!isBundlerImplied(compilerOptions)) {
+    compilerOptions = { ...compilerOptions, ...(await chooseBundler()) };
+  }
 
-	if (!isDomImplied(compilerOptions)) {
-		compilerOptions = { ...compilerOptions, ...(await chooseDom()) };
-	}
+  if (!isDomImplied(compilerOptions)) {
+    compilerOptions = { ...compilerOptions, ...(await chooseDom()) };
+  }
 
-	compilerOptions = { ...compilerOptions, ...(await chooseLibrary()) };
+  compilerOptions = { ...compilerOptions, ...(await chooseLibrary()) };
 
-	return {
-		$schema: "https://json.schemastore.org/tsconfig",
-		compilerOptions,
-	};
+  return {
+    $schema: "https://json.schemastore.org/tsconfig",
+    compilerOptions,
+  };
 }
